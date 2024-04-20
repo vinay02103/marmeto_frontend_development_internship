@@ -1,22 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
     <title>Coding Assesment L2 boilerplate</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Your code goes here -->
     <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
-    </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
-</body>
+      <!-- Happy coding 😊 -->
+      <div class="product-images">
+        <div>
+          <img
+            src="images/Rectangle 4.png"
+            alt="style women"
+            class="rectangle-4"
+          />
+        </div>
+        <div class="thumbnails">
+          <img
+            src="images/Rectangle 6.png"
+            alt="style women"
+            class="rectangle-6 flex-images"
+          />
+          <img
+            src="images/Rectangle 5.png"
+            alt="style women"
+            class="rectangle-5 flex-images"
+          />
+          <img
+            src="images/Rectangle 7.png"
+            alt="style women"
+            class="rectangle-7 flex-images"
+          />
+          <img
+            src="images/Rectangle 8.png"
+            alt="style women"
+            class="rectangle-8 flex-images"
+          />
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="product">
+          <h4>Marmeto</h4>
+          <span class="product-title">Embrace Sideboard</span>
+        </div>
+        <hr
+          style="
+            width: 582px;
+            margin-top: 23px;
+            margin-left: 0;
+            border: 1px solid #e4e4e4;
+          "
+        />
+        <div class="part-2-container">
+          <div class="part-2">
+            <div class="price">
+              <div class="actual-price">$12999.00</div>
+              <div class="compare-at-price"><s>$19999.00</s></div>
+            </div>
+          </div>
 
+          <span class="percentage-off">35% Off</span>
+        </div>
+
+        <hr
+          style="
+            width: 582px;
+            margin-top: 10px;
+            margin-left: 0;
+            border: 1px solid #e4e4e4;
+          "
+        />
+
+        <div class="color-selector">
+          <span class="choose">Choose a Color</span>
+          <div class="flex-boxes">
+            <div class="box box-1 selected" onclick="selectBox(this)">
+              <div class="inbox inbox-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 23.75 19.38"
+                  stroke-width="1.5"
+                  stroke="white"
+                  width="23.75px"
+                  height="19.38px"
+                  class="w-6 h-6 tick-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="box box-2" onclick="selectBox(this)">
+              <div class="inbox inbox-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 23.75 19.38"
+                  stroke-width="1.5"
+                  stroke="white"
+                  width="23.75px"
+                  height="19.38px"
+                  class="w-6 h-6 tick-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="box box-3" onclick="selectBox(this)">
+              <div class="inbox inbox-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 23.75 19.38"
+                  stroke-width="1.5"
+                  stroke="white"
+                  width="23.75px"
+                  height="19.38px"
+                  class="w-6 h-6 tick-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="box box-4" onclick="selectBox(this)">
+              <div class="inbox inbox-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 23.75 19.38"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-6 h-6 tick-icon"
+                  width="23.75px"
+                  height="19.38px"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          style="
+            width: 582px;
+            margin-top: 30px;
+
+            margin-left: 0;
+            border: 1px solid #e4e4e4;
+          "
+        />
+        <div class="size-selector-container">
+          <span class="choose">Choose a Size </span>
+          <div class="size-selector">
+            <div class="selector small-size">
+              <span><input type="radio" name="size" id="1" checked /></span>
+              <span><label for="1" class="small-content">Small</label></span>
+            </div>
+            <div class="selector medium-size">
+              <span><input type="radio" name="size" id="2" /></span>
+              <span><label for="2" class="medium-content">Medium</label></span>
+            </div>
+            <div class="selector large-size">
+              <span><input type="radio" name="size" id="3" /></span>
+              <span><label for="3" class="large-content">Large</label></span>
+            </div>
+            <div class="selector extra-large-size">
+              <span><input type="radio" name="size" id="4" /></span>
+              <span
+                ><label for="4" class="extra-large-content"
+                  >Extra Large</label
+                ></span
+              >
+            </div>
+            <div class="selector xxl-size">
+              <span><input type="radio" name="size" id="5" /></span>
+              <span><label for="5" class="xxl-content">XXL</label></span>
+            </div>
+          </div>
+        </div>
+        <div class="add-to-cart">
+          <div class="quantity-selector">
+            <span class="substract">-</span>
+            <span class="number">1</span>
+            <span class="add">+</span>
+          </div>
+          <div class="add-to">
+            <div class="cart-item" onclick="showMessage()">
+              <span class="add-to-logo"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#FFFFFF"
+                  width="19.53px"
+                  height="17.06px"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg> </span
+              ><span class="add-to-content">Add To Cart</span>
+            </div>
+          </div>
+        </div>
+        <div class="add-to-cart-message-container" style="display: none">
+          <span class="add-to-cart-message">
+            Embrace Sideboard with Color Yellow and Size Small added to cart
+          </span>
+        </div>
+        <hr
+          style="
+            width: 582px;
+            margin-top: 31px;
+            margin-left: 0;
+            border: 1px solid #e4e4e4;
+          "
+        />
+        <div class="description-section">
+          <p class="description-content">
+            The Embrace Sideboard is a stylish wear. With a top cloth designed
+            to provide superior protection and look great, this storage solution
+            is both functional and attractive. It fits seamlessly into any home
+            decor, with clean lines and a timeless look. Crafted from premium
+            materials for a combination of style, durability, and reliability.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>

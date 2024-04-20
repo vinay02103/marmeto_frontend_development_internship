@@ -1,67 +1,36 @@
-# Coding Assessment L-2 Code Submission Process with Boilerplate
+Project Documentation: Coding Assessment Level 2 Boilerplate
 
-Welcome to the coding assessment l2. We are excited to see your skills in action. Please follow the instructions below to submit your solution.
+Table of Contents
+1)Project Structure
+2)HTML Structure
+3)CSS Styling
+4)JavaScript Functionality
 
-## Getting Started
+1. Project Structure
+   => index.html: Contains the HTML structure of the project.
+   => style.css: Contains the styling for the HTML elements.
+   => script.js: Contains the JavaScript functionality for the project.
+   => images/: Directory containing product images.
 
-1. **Clone or Download:**
-   - If using Git, clone the repository using the following command:
-     ```
-     git clone https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code.git
-     ```
-   - Alternatively, download the code as a ZIP file and extract it.
+2. HTML Structure
+   => Container: The main container div with a flex layout to hold product images and
+   content.
+   => Product Images: Displays the main product image and thumbnails.
+   => Content Container: Contains the product title, price, color selector, size selector, add to cart button, and product description.
+   => Color Selector: Allows users to choose different colors for the product.
+   => Size Selector: Allows users to choose different sizes for the product.
+   => Add to Cart: Allows users to add the product to their cart.
+   => Add to Cart Message Container: Displays a message confirming the addition of the
+   product to the cart.
 
-2. **Navigate to Project Directory:**
+   3. CSS Styling
+      => Responsive Design: Media queries are used to ensure the layout is responsive across different screen sizes.
+      => Color Palette: Uses a consistent color palette throughout the project for a visually appealing design.
+      => Typography: Utilizes the Roboto font from Google Fonts for a modern and clean look.
+      => Box Styling: Borders and backgrounds are styled to enhance the visual appearance of elements like color selectors and size selectors.
 
-3. **Explore the Structure:**
-Take a moment to review the project structure:
-
-        project-root/
-        |-- index.html
-        |-- style.css
-        |-- script.js
-        |-- README.md
-- `index.html`: Main HTML file for your project.
-- `style.css`: CSS file for styling.
-- `script.js`: JavaScript file for scripting logic.
-- `README.md`: Documentation for your project.
-  
-> **Important:** Avoid using additional files or a single file for your code. Feel free to organize asset files by creating a separate folder.
-
-## Development and Testing
-
-4. **Start Working:**
-- Read all requirements that are shared with design files.
-- Open `index.html` in your browser to view the initial state of the project, And start coding.
-- Modify the `style.css` and `script.js` files to implement your solution.
-5. **Testing:**
-- Test your code to ensure it produces the expected output.
-- Ensure that the console (Developer Tools) does not display any errors.
-
-
----
-## Submission Guidelines
-
-### Option 1: GitHub Repository
-
-1. Create a new public repository on GitHub.
-2. Upload your project files (index.html, style.css, script.js) to the repository.
-3. Write a brief description of your project in the README.md file.
-4. Share the repository URL with us.
-
-### Option 2: ZIP File on Google Drive
-
-1. Create a ZIP file of your entire project.
-2. Upload the ZIP file to your Google Drive.
-3. Share the public link to the ZIP file via email.
-
-## Hosting (Bonus)
-You can earn bonus points by hosting your project on a free hosting platform such as GitHub Pages or Netlify.
-
-## Important Notes
-
-- Do not use any third-party libraries or frameworks.
-- Ensure that your project works as intended and is free from errors.
-- Make sure to include clear instructions on how to run your project (if necessary).
-
-Feel free to reach out to invigilator at `rishabh@marmeto.com` if you have any questions. Good luck! We look forward to reviewing your submission.
+3. JavaScript Functionality
+   => Selecting Color and Size: Allows users to select a color and size for the product using radio buttons.
+   => Adding to Cart: Implements functionality to add the product to the cart when the "Add to Cart" button is clicked.
+   => Quantity Selector: Enables users to adjust the quantity of the product before adding it to the cart.
+   => Displaying Cart Message: Shows a message confirming the addition of the product to the cart when the "Add to Cart" button is clicked.
